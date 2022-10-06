@@ -1,5 +1,12 @@
 // COLORS
 
+$purple: #5533ff;
+$primary: #ebad00;
+
+$primary-500: #ebaf00;
+$secondary: #000000;
+$secondary-200: #67686a;
+
 $color-white: #fff;
 $color-black: #000;
 
@@ -20,13 +27,24 @@ $color-blue-dark-1: #374059;
 $color-blue-dark-2: #353e56;
 $color-blue-dark-3: #20292f;
 
-// FONTS
+$color-green-medium: #55c57a;
+$color-grey-primary: #777;
+$color-grey-dark-1: #999;
+$color-green-dark: #28b485;
+$color-blue-light: #2998ff;
+$color-blue-studio77: #27ccc0;
+$color-grey-rafting-original-spolja: #545460;
+$color-grey-rafting-original-iznutra: #7d8398;
 
+// FONTS
+// Fonts family variables for the font family.
 $font-primary: "Lato", sans-serif;
 $font-secondary: "Poppins", sans-serif;
 
+// Fonts size variables for the font family
 $font-size-1: 1.4rem;
 
+//Fonts line height variables for the font family
 $line-height-1: 1;
 $line-height-2: 1.4;
 $line-height-3: 1.7;
@@ -45,25 +63,36 @@ $bx-sw-4: 0 3rem 6rem rgba($color-black, 0.1);
 
 // TRANSITIONS
 
-$transition-1: all 0.2s;
-$transition-2: all 0.5s;
+$transition-1: all 0.5s;
+$transition-2: all 1s;
 $transition-3: all 1.5s;
+$transition-4: all 2s;
+$transition-5: all 2.5s;
+$transition-6: all 3s;
+$transition-7: all 3.5s;
 
 // BREAKPOINTS
 
-$bp-1: 82.5em; // 1320px
-$bp-2: 75em; // 1200px
-$bp-3: 58.75em; // 940px
-$bp-4: 51.75em; // 828px
-$bp-5: 51.5em; // 824px
-$bp-6: 40em; // 640px
-$bp-7: 30.25em; // 484px
+// $bp-1: 82.5em; // 1400px
+// $bp-2: 82.5em; // 1320px
+// $bp-3: 75em; // 1200px
+// $bp-4: 58.75em; // 940px
+// $bp-5: 51.75em; // 828px
+// $bp-6: 51.5em; // 824px
+// $bp-7: 40em; // 640px
+// $bp-8: 30.25em; // 484px
 
-$color-green-medium: #55c57a;
-$color-grey-primary: #777;
-$color-grey-dark-1: #999;
-$color-green-dark: #28b485;
-$color-blue-light: #2998ff;
-$color-blue-studio77: #27ccc0;
-$color-grey-rafting-original-spolja: #545460;
-$color-grey-rafting-original-iznutra: #7d8398;
+// applying absolute breakpoints width.
+
+$bp-1: 1400px;
+$bp-2: 1320px;
+$bp-3: 1200px;
+$bp-4: 940px;
+$bp-5: 828px;
+$bp-6: 824px;
+$bp-7: 640px;
+$bp-8: 484px;
+
+// z-index variable .
+$Home_page_hero_area_entry_content_z_index: 1;
+$login_modal: 2;
