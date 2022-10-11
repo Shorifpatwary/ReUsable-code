@@ -1,0 +1,44 @@
+@import "../../styles/scss/variable";
+.app__social {
+	position: fixed;
+	bottom: 12px;
+	padding: 1rem;
+
+	div {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: $white;
+		margin: 0.25rem 0;
+		border: 1px solid $grey-light-1;
+
+		transition: $transition-2;
+
+		svg {
+			width: 15px;
+			height: 15px;
+			color: $grey-primary;
+		}
+
+		&:hover {
+			background-color: $secondary;
+			border-color: $secondary-200;
+
+			svg {
+				color: $white;
+			}
+		}
+
+		@media screen and (min-width: $bp-lg-1) {
+			width: 70px;
+			height: 70px;
+
+			margin: 0.5rem 0;
+
+			svg {
+				width: 30px;
+				height: 30px;
+			}
+		}
+	}
+}

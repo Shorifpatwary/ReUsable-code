@@ -1,0 +1,208 @@
+@import "../../styles/scss/variable";
+// .app__navbar {
+// 	width: 100%;
+
+// 	padding: 1rem 2rem;
+// 	@media screen and (max-width: $bp-7) {
+// 		padding: 1rem 1rem;
+// 	}
+// 	background: $bg-color-1;
+// 	backdrop-filter: blur(4px);
+// 	border: 1px solid $bg-color-1;
+// 	border-bottom: 0.5px solid $white-1;
+// 	position: fixed;
+// 	z-index: $navbar_z_index;
+
+// 	.app__navbar-logo {
+// 		img {
+// 			width: 90px;
+// 			height: 20px;
+// 			object-fit: none;
+
+// 			@media screen and (max-width: $bp-lg-1) and (min-width: $bp-1) {
+// 				width: 180px;
+// 				height: 40px;
+// 			}
+// 		}
+// 	}
+// 	.app__navbar-links {
+// 		padding: 0 20px;
+// 		text-transform: capitalize;
+// 		li {
+// 			div {
+// 				background: transparent;
+// 				border-radius: 50%;
+
+// 				margin-bottom: 5px;
+
+// 				&:hover {
+// 					background: $secondary;
+// 				}
+
+// 				a {
+// 					// color: $black-2;
+// 					font-weight: 500;
+// 					transition: $transition-1;
+
+// 					&:hover {
+// 						color: $secondary-200;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// import css
+.app__navbar {
+	width: 100%;
+
+	justify-content: space-between;
+
+	padding: 1rem 2rem;
+	background: rgba(255, 255, 255, 0.25);
+	// box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur(4px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	position: fixed;
+	z-index: 2;
+}
+
+.app__navbar-logo {
+	img {
+		width: 90px;
+		height: 20px;
+
+		@media screen and (min-width: $bp-lg-1) {
+			width: 180px;
+			height: 40px;
+		}
+	}
+}
+
+.app__navbar-links {
+	flex: 1;
+
+	list-style: none;
+
+	li {
+		margin: 0 1rem;
+		cursor: pointer;
+
+		flex-direction: column;
+
+		div {
+			width: 5px;
+			height: 5px;
+			background: transparent;
+			border-radius: 50%;
+
+			margin-bottom: 5px;
+		}
+
+		a {
+			flex-direction: column;
+			color: $grey-primary;
+			text-decoration: none;
+
+			text-transform: uppercase;
+			font-weight: 500;
+
+			transition: all 0.3s ease-in-out;
+
+			&:hover {
+				color: $secondary;
+			}
+		}
+
+		&:hover {
+			div {
+				background: $secondary;
+			}
+		}
+	}
+
+	@media screen and (max-width: $bp-4) {
+		display: none;
+	}
+}
+
+.app__navbar-menu {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	position: relative;
+
+	background-color: $secondary;
+
+	svg {
+		width: 70%;
+		height: 70%;
+		color: $white;
+	}
+
+	div {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 5;
+
+		padding: 1rem;
+
+		width: 80%;
+		height: 100vh;
+
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		flex-direction: column;
+
+		background: url("../../assets/bgWhite.png");
+		background-color: $white;
+		background-size: cover;
+		background-repeat: repeat;
+
+		/* top box shadow */
+		box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
+
+		svg {
+			width: 35px;
+			height: 35px;
+			color: $secondary;
+			margin: 0.5rem 1rem;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			width: 100%;
+
+			li {
+				a {
+					color: var(--gray-color);
+					text-decoration: none;
+					font-size: 1rem;
+					text-transform: uppercase;
+					font-weight: 500;
+
+					transition: all 0.3s ease-in-out;
+
+					&:hover {
+						color: $secondary;
+					}
+				}
+			}
+		}
+
+		@media screen and (min-width: $bp-4) {
+			display: none;
+		}
+	}
+
+	@media screen and (min-width: $bp-4) {
+		display: none;
+	}
+}

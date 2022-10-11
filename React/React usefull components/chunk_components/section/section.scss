@@ -1,0 +1,19 @@
+@import "../../../styles/scss/variable";
+
+.section__wrapper {
+	width: 100%;
+	@media screen and (max-width: $bp-1) {
+		min-height: 100vh;
+	}
+	@media screen and (max-width: $bp-6) {
+		padding: 6rem 1rem 5rem 1rem;
+	}
+	// @media screen and (max-width: $bp-5) {
+	// 	max-height: 80vh;
+	// }
+	.section__row {
+		@media screen and (max-width: $bp-1) and (min-width: $bp-5) {
+			max-height: 80vh;
+		}
+	}
+}
