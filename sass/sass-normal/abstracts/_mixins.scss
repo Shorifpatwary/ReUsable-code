@@ -7,10 +7,11 @@ $colorList: (
 @mixin color-variable-generator(
 	$colorName: white,
 	$colorValue: #fff,
+	$colorMap: $colorList,
 	$def: "!default"
 ) {
 	$dollar-sign: "$";
-	@each $colorName, $colorValue in $colorList {
+	@each $colorName, $colorValue in $colorMap {
 		#{$dollar-sign}#{$colorName}: $colorValue #{$def};
 		#{$dollar-sign}#{$colorName}-1: lighten($colorValue, 30%) #{$def};
 		#{$dollar-sign}#{$colorName}-2: lighten($colorValue, 15%) #{$def};
@@ -19,7 +20,6 @@ $colorList: (
 		#{$dollar-sign}#{$colorName}-5: darken($colorValue, 30%) #{$def};
 	}
 }
-// need to be fixed this issue . I don't know how escape special character in sass
 // @include color-variable-generator($color_map) ;// use example
 
 // responsive columns mixin
