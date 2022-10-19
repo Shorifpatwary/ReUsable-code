@@ -12,7 +12,8 @@ $colorList: (
 ) {
 	$dollar-sign: "$";
 	@each $colorName, $colorValue in $colorMap {
-		#{$dollar-sign}#{$colorName}: $colorValue #{$def};
+		#{$dollar-sign}#{$colorName}: $colorValue
+			#{$def}; // don't use this line . use instead of $colorName-3 variable .
 		#{$dollar-sign}#{$colorName}-1: lighten($colorValue, 30%) #{$def};
 		#{$dollar-sign}#{$colorName}-2: lighten($colorValue, 15%) #{$def};
 		#{$dollar-sign}#{$colorName}-3: $colorValue #{$def};
