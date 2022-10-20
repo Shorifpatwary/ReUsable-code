@@ -1,56 +1,65 @@
+.col__12 {
+	flex-grow: 1;
+	flex-basis: 100%;
+}
+
+.col__11 {
+	flex-grow: 1;
+	flex-basis: 91.66667%;
+}
+
+.col__10 {
+	flex-grow: 1;
+	flex-basis: 83.33333%;
+}
+
+.col__9 {
+	flex-grow: 1;
+	flex-basis: 75%;
+}
+
+.col__8 {
+	flex-grow: 1;
+	flex-basis: 66.66667%;
+}
+
+.col__7 {
+	flex-grow: 1;
+	flex-basis: 58.33333%;
+}
+
+.col__6 {
+	flex-grow: 1;
+	flex-basis: 50%;
+}
+
+.col__5 {
+	flex-grow: 1;
+	flex-basis: 41.66667%;
+}
+
+.col__4 {
+	flex-grow: 1;
+	flex-basis: 33.33333%;
+}
+
+.col__3 {
+	flex-grow: 1;
+	flex-basis: 25%;
+}
+
+.col__2 {
+	flex-grow: 1;
+	flex-basis: 16.66667%;
+}
+
+.col__1 {
+	flex-grow: 1;
+	flex-basis: 8.33333%;
+}
+
 /* use example */
 // @include column-divide-with-breakpoints(); use this mixin to make custom layout classes for your breakpoints .
-
-@media screen and (min-width: 992) {
-	.col__bp-1-12 {
-		flex-grow: 1;
-		flex-basis: 100%;
-	}
-	.col__bp-1-11 {
-		flex-grow: 1;
-		flex-basis: 91.66667%;
-	}
-	.col__bp-1-10 {
-		flex-grow: 1;
-		flex-basis: 83.33333%;
-	}
-	.col__bp-1-9 {
-		flex-grow: 1;
-		flex-basis: 75%;
-	}
-	.col__bp-1-8 {
-		flex-grow: 1;
-		flex-basis: 66.66667%;
-	}
-	.col__bp-1-7 {
-		flex-grow: 1;
-		flex-basis: 58.33333%;
-	}
-	.col__bp-1-6 {
-		flex-grow: 1;
-		flex-basis: 50%;
-	}
-	.col__bp-1-5 {
-		flex-grow: 1;
-		flex-basis: 41.66667%;
-	}
-	.col__bp-1-4 {
-		flex-grow: 1;
-		flex-basis: 33.33333%;
-	}
-	.col__bp-1-3 {
-		flex-grow: 1;
-		flex-basis: 25%;
-	}
-	.col__bp-1-2 {
-		flex-grow: 1;
-		flex-basis: 16.66667%;
-	}
-	.col__bp-1-1 {
-		flex-grow: 1;
-		flex-basis: 8.33333%;
-	}
-}
 
 @media screen and (max-width: 992) {
 	.col__bp-3-12 {

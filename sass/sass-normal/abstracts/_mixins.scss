@@ -23,7 +23,7 @@ $colorList: (
 }
 // @include color-variable-generator($color_map) ;// use example
 
-// responsive columns mixin
+// responsive breakpoints columns creator mixin
 $breakpoints: (
 	bp-1: 1400,
 	// bp = breakpoint
@@ -47,7 +47,7 @@ $breakpoints: (
 				.col__#{$Breakpoints}-#{$i} {
 					flex-grow: 1; // bootstrap policy >> flex: 0 0 auto; with width property .
 					// 100 / 12 ($totalColumns) =  8.33333333333
-					flex-basis: (8.33333333333 * #{$i}) #{$widthUnite};
+					flex-basis: 8.33333333333 * #{$i}#{$widthUnite};
 				}
 			}
 		}
@@ -55,3 +55,18 @@ $breakpoints: (
 }
 /* use example */
 // @include column-divide-with-breakpoints()
+
+// responsive without breakpoints columns creator mixin
+
+@mixin column-divide-without-breakpoints($totalColumn: 12, $widthUnite: "%") {
+	@for $i from $totalColumn through 1 {
+		.col__#{$i} {
+			flex-grow: 1; // bootstrap policy >> flex: 0 0 auto; with width property .
+			// 100 / 12 ($totalColumns) =  8.33333333333
+			flex-basis: 8.33333333333 *#{$i}#{$widthUnite};
+		}
+	}
+}
+
+/* use example */
+// @include column-divide-without-breakpoints()
