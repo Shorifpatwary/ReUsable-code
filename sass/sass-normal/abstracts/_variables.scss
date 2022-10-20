@@ -1,17 +1,17 @@
 // COLORS
 // main colors
+// white to black
 $white: #fff !default;
-$gray-1: #ced4da !default;
-$gray-2: #adb5bd !default;
-$gray-3: #6c757d !default;
-$gray-4: #495057 !default;
-$gray-5: #343a40 !default;
-$gray-6: #212529 !default;
+
+$gray-1: #adb5bd !default;
+$gray-2: #6c757d !default;
+$gray-3: #495057 !default;
+$gray-4: #343a40 !default;
+$gray-5: #212529 !default;
 
 $black: #000 !default;
 
 // blue start
-$blue: #0d6efd !default;
 $blue-1: #cfe2ff !default;
 $blue-2: #6ea8fe !default;
 $blue-3: #0a58ca !default;
@@ -19,15 +19,12 @@ $blue-4: #084298 !default;
 $blue-5: #031633 !default;
 
 // indigo start
-$indigo: #6610f2 !default;
-$indigo-1: #a471f7;
-$indigo-2: #8540f5;
-$indigo-3: #6610f2;
-$indigo-4: #510bc4;
-$indigo-5: #3d0894;
-
+$indigo-1: #c3a1fa !default;
+$indigo-2: #9459f6 !default;
+$indigo-3: #6610f2 !default;
+$indigo-4: #4709ac !default;
+$indigo-5: #290564 !default;
 // purple start
-$purple: #6f42c1 !default;
 $purple-1: #c7b5e7 !default;
 $purple-2: #9b7cd4 !default;
 $purple-3: #6f42c1 !default;
@@ -35,7 +32,6 @@ $purple-4: #4e2d89 !default;
 $purple-5: #2d1a50 !default;
 
 // pink start
-$pink: #d63384 !default;
 $pink-1: #f0b2d1 !default;
 $pink-2: #e373aa !default;
 $pink-3: #d63384 !default;
@@ -43,7 +39,6 @@ $pink-4: #9d205e !default;
 $pink-5: #5d1338 !default;
 
 // red start
-$red: #dc3545 !default;
 $red-1: #f3b7bd !default;
 $red-2: #e77681 !default;
 $red-3: #dc3545 !default;
@@ -51,7 +46,6 @@ $red-4: #a71d2a !default;
 $red-5: #66121a !default;
 
 // orange start
-$orange: #fd7e14 !default;
 $orange-1: #fed1ac !default;
 $orange-2: #fea860 !default;
 $orange-3: #fd7e14 !default;
@@ -59,7 +53,6 @@ $orange-4: #c35a02 !default;
 $orange-5: #773701 !default;
 
 // yellow start
-$yellow: #ffc107 !default;
 $yellow-1: #ffe7a0 !default;
 $yellow-2: #ffd454 !default;
 $yellow-3: #ffc107 !default;
@@ -67,7 +60,6 @@ $yellow-4: #b98b00 !default;
 $yellow-5: #6d5200 !default;
 
 // green start
-$green: #198754 !default;
 $green-1: #59e0a1 !default;
 $green-2: #25c87c !default;
 $green-3: #198754 !default;
@@ -75,7 +67,6 @@ $green-4: #0d462c !default;
 $green-5: #010604 !default;
 
 // teal start
-$teal: #20c997 !default;
 $teal-1: #94eed3 !default;
 $teal-2: #52e3b8 !default;
 $teal-3: #20c997 !default;
@@ -83,12 +74,16 @@ $teal-4: #158765 !default;
 $teal-5: #0b4534 !default;
 
 // cyan start
-$cyan: #0dcaf0 !default;
 $cyan-1: #9ceafa !default;
 $cyan-2: #54dbf6 !default;
 $cyan-3: #0dcaf0 !default;
 $cyan-4: #098da7 !default;
 $cyan-5: #05505f !default;
+
+// Custom colors variables.
+// ........
+// COLORS USABLE VARIABLE FOR APPLICATION.
+// ........
 
 // FONTS
 // Fonts family variables for the font family.
@@ -126,21 +121,11 @@ $transition-6: all 3s;
 $transition-7: all 3.5s;
 
 // BREAKPOINTS START
-
-// $bp-1: 82.5em; // 1400px
-// $bp-2: 82.5em; // 1320px
-// $bp-3: 75em; // 1200px
-// $bp-4: 58.75em; // 940px
-// $bp-5: 51.75em; // 828px
-// $bp-6: 51.5em; // 824px
-// $bp-7: 40em; // 640px
-// $bp-8: 30.25em; // 484px
-
 // applying absolute breakpoints width.
 // Extra lg breakpoints
 $bp-lg-1: 2000px;
-$bp-lg-1: 1800px;
-$bp-lg-1: 1600px;
+$bp-lg-2: 1800px;
+$bp-lg-3: 1600px;
 
 // standard breakpoints
 $bp-1: 1400px;

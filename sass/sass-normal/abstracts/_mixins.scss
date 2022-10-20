@@ -21,7 +21,7 @@ $colorList: (
 		#{$dollar-sign}#{$colorName}-5: darken($colorValue, 30%) #{$def};
 	}
 }
-// @include color-variable-generator($color_map) ;// use example
+// @include color-variable-generator($colorList) ;// use example
 
 // responsive breakpoints columns creator mixin
 $breakpoints: (
