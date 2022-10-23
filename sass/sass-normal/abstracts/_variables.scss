@@ -1,127 +1,105 @@
-// COLORS
-// main colors
-// white to black
-$white: #fff !default;
+@import "./helper-variable";
+// ====== WEBSITE COLORS =======
+$color-primary: $blue-5;
 
-$gray-1: #adb5bd !default;
-$gray-2: #6c757d !default;
-$gray-3: #495057 !default;
-$gray-4: #343a40 !default;
-$gray-5: #212529 !default;
+$color-secondary: $red-3;
 
-$black: #000 !default;
+$color-tertiary: $gray-3;
 
-// blue start
-$blue-1: #cfe2ff !default;
-$blue-2: #6ea8fe !default;
-$blue-3: #0a58ca !default;
-$blue-4: #084298 !default;
-$blue-5: #031633 !default;
+$color-quaternary: $white;
 
-// indigo start
-$indigo-1: #c3a1fa !default;
-$indigo-2: #9459f6 !default;
-$indigo-3: #6610f2 !default;
-$indigo-4: #4709ac !default;
-$indigo-5: #290564 !default;
-// purple start
-$purple-1: #c7b5e7 !default;
-$purple-2: #9b7cd4 !default;
-$purple-3: #6f42c1 !default;
-$purple-4: #4e2d89 !default;
-$purple-5: #2d1a50 !default;
+// ====== WEBSITE BG COLORS =======
 
-// pink start
-$pink-1: #f0b2d1 !default;
-$pink-2: #e373aa !default;
-$pink-3: #d63384 !default;
-$pink-4: #9d205e !default;
-$pink-5: #5d1338 !default;
+$bg-primary: $white;
+$bg-secondary: lighten($color-secondary, 40%);
+$bg-tertiary: $color-secondary;
 
-// red start
-$red-1: #f3b7bd !default;
-$red-2: #e77681 !default;
-$red-3: #dc3545 !default;
-$red-4: #a71d2a !default;
-$red-5: #66121a !default;
+$body-bg: $bg-primary;
+$modal-bg: $grey-ts-2;
 
-// orange start
-$orange-1: #fed1ac !default;
-$orange-2: #fea860 !default;
-$orange-3: #fd7e14 !default;
-$orange-4: #c35a02 !default;
-$orange-5: #773701 !default;
+$body-text-color: $gray-5;
+// LINK COLORS
+$link-color: $color-primary;
+$link-hover-color: $color-secondary;
+// BOX SHADOW
+$bx-sw-color-1: $gray-ts-1;
 
-// yellow start
-$yellow-1: #ffe7a0 !default;
-$yellow-2: #ffd454 !default;
-$yellow-3: #ffc107 !default;
-$yellow-4: #b98b00 !default;
-$yellow-5: #6d5200 !default;
-
-// green start
-$green-1: #59e0a1 !default;
-$green-2: #25c87c !default;
-$green-3: #198754 !default;
-$green-4: #0d462c !default;
-$green-5: #010604 !default;
-
-// teal start
-$teal-1: #94eed3 !default;
-$teal-2: #52e3b8 !default;
-$teal-3: #20c997 !default;
-$teal-4: #158765 !default;
-$teal-5: #0b4534 !default;
-
-// cyan start
-$cyan-1: #9ceafa !default;
-$cyan-2: #54dbf6 !default;
-$cyan-3: #0dcaf0 !default;
-$cyan-4: #098da7 !default;
-$cyan-5: #05505f !default;
-
-// Custom colors variables.
 // ........
 // COLORS USABLE VARIABLE FOR APPLICATION.
 // ........
 
-// FONTS
-// Fonts family variables for the font family.
-$font-primary: "Lato", sans-serif;
-$font-secondary: "Poppins", sans-serif;
+// ======== FONTS ==========
+$body-font-size: $text-3;
+// SETUP WEBSITE FONT SIZE BY FOLLOWING YOUR UI.
+// for only text or p elements
+$text-x-sm: 0.7rem;
+$text-sm: $text-1;
+$text-md: $text-2;
+$text-lg: $text-3;
+$text-x-lg: $text-4;
 
-// Fonts size variables for the font family
-$font-size-1: 1.4rem;
+$title-x-sm: $text-5;
+$title-sm: $text-7;
+$title-md: $text-9;
+$title-lg: $text-11;
+$title-x-lg: $text-13;
 
-//Fonts line height variables for the font family
+$display-1: $text-15;
+$display-2: 4.5rem;
+$display-3: 5rem;
+$display-4: 5.5rem;
+$display-5: 6rem;
+
+// ========== FONT FAMILY =======
+$ff-primary: "Lato", sans-serif;
+$ff-secondary: "Poppins", sans-serif;
+
+$body-font-family: $ff-primary;
+$font-monospace: monospace, "Courier New", Courier;
+
+// ==== FONT WEIGHT ====
+$fw-thin: 100;
+$fw-light: 300;
+$fw-regular: 500;
+$fw-bolder: 700;
+$fw-bold: 900;
+
+$body-font-weight: $fw-regular;
+
+// ========= LINE HEIGHT =======
 $line-height-1: 1;
 $line-height-2: 1.4;
 $line-height-3: 1.7;
+$line-height-4: 2;
+$line-height-5: 2.5;
 
-// TEXT-SHADOWS
+$body-line-height: $line-height-2;
+// ===== TEXT-SHADOWS ======
 
-$text-shadow-1: 0.2rem 0.2rem 0.2rem $color-black;
+$text-shadow-1: 0.2rem 0.2rem 0.2rem $bx-sw-color-1;
 
-// BOX-SHADOWS
+// ========== BOX-SHADOWS =============
 
 //bx-sw:X-osa Y-osa blur rgba(boja, opacity);
-$bx-sw-1: 0 0.7rem 1.1rem rgba($color-black, 0.1);
-$bx-sw-2: 0 1rem 2rem rgba($color-black, 0.3);
-$bx-sw-3: 0 0.5rem 1rem rgba($color-black, 0.2);
-$bx-sw-4: 0 3rem 6rem rgba($color-black, 0.1);
+// 5px 5px 15px -5px #fde4e4
+$bx-sw-1: 0 0.7rem 1.1rem $black-ts-1;
+$bx-sw-2: 0 1rem 2rem $black-ts-2;
+$bx-sw-3: 0 0.5rem 1rem $black-ts-2;
+$bx-sw-4: 0 3rem 6rem $black-ts-1;
+//  BORDER RADIUS
+$br-round: 5px;
+$br-rounded: 10px;
+$br-circle: 50%;
 
-// TRANSITIONS
+// ============ TRANSITIONS ============
 
 $transition-1: all 0.5s;
-$transition-2: all 1s;
+$transition-2: all 1s ease-in;
 $transition-3: all 1.5s;
 $transition-4: all 2s;
 $transition-5: all 2.5s;
-$transition-6: all 3s;
-$transition-7: all 3.5s;
 
-// BREAKPOINTS START
-// applying absolute breakpoints width.
+// ================ BREAKPOINTS START ================
 // Extra lg breakpoints
 $bp-lg-1: 2000px;
 $bp-lg-2: 1800px;
@@ -135,9 +113,12 @@ $bp-4: 768px;
 $bp-5: 576px; // column breakpoint for responsive
 $bp-6: 450px;
 // Extra sm breakpoints
-$bp-sm-1: 350px;
+$bp-sm-1: 380px;
 // BREAKPOINTS END
-
+// container WIDTH AND HEIGHT variable
+$nav-wrapper-width: 90%;
 // z-index variable .
-$Home_page_hero_area_entry_content_z_index: 1;
+$mobile-navigation-z-index: 2;
+$menu-mobile-z-index: 4;
+$header-shrink-z-index: 10;
 $login_modal: 2;
