@@ -12,7 +12,7 @@ There is no need install anything from this repository.You can simply copy and c
     
 ## Documentation
 
-[Sass Documentation](https://linktodocumentation)
+[Sass Documentation](https://github.com/Shorifpatwary/ReUsable-code-and-library/tree/main/sass/sass-normal)
 
 [React Documentation](https://linktodocumentation)
 
