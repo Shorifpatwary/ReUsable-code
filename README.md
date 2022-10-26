@@ -3,11 +3,11 @@
 
 ## ReUsable-code for developers
 
-For now this repository containing most reusable sass and react code.But I will add other thecnology reusable code leter. 
+reusable code is only for those developer, who spend more time to making folder and writing semiler code for all the time.started project For now this repository containing most reusable sass and react code.But I will add other thecnology reusable code leter. 
 
 ## Installation
 
-There is no need install anything from this repository. You can simply copy and customize code according to your project requirment.
+There is no need install anything from this repository.You can simply copy and customize code according to your project requirment.
 
     
 ## Documentation
