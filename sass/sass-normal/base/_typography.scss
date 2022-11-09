@@ -4,20 +4,20 @@
 %paragraph {
 	font-weight: 300;
 }
-.lead__1 {
-	font-size: 1.5rem;
+.text__1 {
+	font-size: 22px;
 	@extend %paragraph;
 }
-.lead__2 {
-	font-size: 1.35rem;
+.text__2 {
+	font-size: 20px;
 	@extend %paragraph;
 }
-.lead__3 {
-	font-size: 1.25rem;
+.text__3 {
+	font-size: 18px;
 	@extend %paragraph;
 }
-.lead__4 {
-	font-size: 1.1rem;
+.text__4 {
+	font-size: 16px;
 	@extend %paragraph;
 }
 .des__1 {
@@ -34,5 +34,13 @@
 }
 .des__4 {
 	font-size: calc(14px + 0.25vw);
+	@extend %paragraph;
+}
+.des__5 {
+	font-size: calc(13px + 0.25vw);
+	@extend %paragraph;
+}
+.des__6 {
+	font-size: calc(12px + 0.25vw);
 	@extend %paragraph;
 }

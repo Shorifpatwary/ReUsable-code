@@ -11,7 +11,7 @@ $color-quaternary: $white;
 // ====== WEBSITE BG COLORS =======
 
 $bg-primary: $white;
-$bg-secondary: lighten($color-secondary, 40%);
+$bg-secondary: #fde4e4;
 $bg-tertiary: $color-secondary;
 
 $body-bg: $bg-primary;
@@ -68,10 +68,11 @@ $body-font-weight: $fw-regular;
 
 // ========= LINE HEIGHT =======
 $line-height-1: 1;
-$line-height-2: 1.4;
-$line-height-3: 1.7;
-$line-height-4: 2;
-$line-height-5: 2.5;
+$line-height-2: 1.25;
+$line-height-3: 1.5;
+$line-height-4: 1.75;
+$line-height-5: 2;
+$line-height-6: 2.5;
 
 $body-line-height: $line-height-2;
 // ===== TEXT-SHADOWS ======
@@ -109,7 +110,7 @@ $bp-lg-3: 1600px;
 $bp-1: 1400px;
 $bp-2: 1200px;
 $bp-3: 992px; // column breakpoint for responsive
-$bp-4: 768px;
+$bp-4: 768px; // column breakpoint for responsive
 $bp-5: 576px; // column breakpoint for responsive
 $bp-6: 450px;
 // Extra sm breakpoints

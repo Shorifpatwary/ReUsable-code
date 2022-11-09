@@ -1,29 +1,27 @@
 *,
 *::before,
 *::after {
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 }
-
 :root {
+	// if you want to increase or decrease your font size , modify 0.5vw width. not 10px .
+	font-size: calc(0.5vw + 10px);
 	scroll-behavior: smooth;
 }
 
 body {
-	margin: 0;
-	font-family: var(--bs-body-font-family);
-	font-size: var(--bs-body-font-size);
-	font-weight: var(--bs-body-font-weight);
-	line-height: var(--bs-body-line-height);
-	color: var(--bs-body-color);
-	text-align: var(--bs-body-text-align);
-	background-color: var(--bs-body-bg);
+	font-family: $body-font-family;
+	color: $body-text-color;
+	background-color: $body-bg;
+	line-height: $line-height-3;
+	// apply line height according to you UI.( optional )
 }
 
 hr {
 	margin: 1rem 0;
-	color: inherit;
-	border: 0;
-	border-top: 1px solid;
+	border-top: 0px 1px solid;
 	opacity: 0.5;
 }
 
@@ -35,14 +33,14 @@ h2,
 h1 {
 	margin-top: 0;
 	margin-bottom: 0.5rem;
-	font-weight: 500;
-	line-height: 1.2;
+	font-weight: 700;
+	line-height: $line-height-2;
 }
 
 h1 {
 	font-size: calc(1.375rem + 1.5vw);
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 	h1 {
 		font-size: 2.5rem;
 	}
@@ -51,7 +49,7 @@ h1 {
 h2 {
 	font-size: calc(1.325rem + 0.9vw);
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 	h2 {
 		font-size: 2rem;
 	}
@@ -60,7 +58,7 @@ h2 {
 h3 {
 	font-size: calc(1.3rem + 0.6vw);
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 	h3 {
 		font-size: 1.75rem;
 	}
@@ -69,7 +67,7 @@ h3 {
 h4 {
 	font-size: calc(1.275rem + 0.3vw);
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 	h4 {
 		font-size: 1.5rem;
 	}
@@ -84,8 +82,11 @@ h6 {
 }
 
 p {
-	margin-top: 0;
-	margin-bottom: 1rem;
+	font-size: calc(16px + 0.3vw);
+	font-weight: 300;
+	color: $color-primary;
+	// margin-bottom: 0.8rem;
+	// line height and font family will be inherited from body
 }
 address {
 	margin-bottom: 1rem;
@@ -95,20 +96,20 @@ address {
 
 ol,
 ul {
-	padding-left: 2rem;
+	margin: 0;
+	padding: 0;
+	// margin-bottom: 1rem;
+	margin-left: 0px;
 }
 
-ol,
-ul {
-	margin-top: 0;
-	margin-bottom: 1rem;
-}
-
-ol ol,
-ul ul,
-ol ul,
-ul ol {
-	margin-bottom: 0;
+// ol ol,
+// ul ul,
+// ol ul,
+// ul ol {
+// 	margin-bottom: 0;
+// }
+li {
+	list-style: none;
 }
 
 blockquote {
@@ -120,25 +121,31 @@ small {
 }
 
 a {
-	color: var(--bs-link-color);
+	color: $link-color;
 	cursor: pointer;
-	// transition: $transition-1;
-}
-a:hover {
-	color: var(--bs-link-hover-color);
+	text-decoration: none;
+	transition: $transition-1;
+
+	&:hover {
+		color: $link-hover-color;
+	}
 }
 
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
 	color: inherit;
-	text-decoration: none;
+}
+
+i {
+	font-size: $text-2;
+	color: $color-secondary;
 }
 
 pre,
 code,
 kbd,
 samp {
-	font-family: var(--bs-font-monospace);
+	font-family: $font-monospace;
 	font-size: 1em;
 }
 
@@ -156,7 +163,9 @@ figure {
 
 img,
 svg {
+	width: 100%;
 	vertical-align: middle;
+	object-fit: cover;
 }
 
 table {
@@ -218,16 +227,25 @@ legend {
 	margin-bottom: 0.5rem;
 	font-size: calc(1.275rem + 0.3vw);
 	line-height: inherit;
-}
-@media (min-width: 1200px) {
-	legend {
+	@media only screen and (min-width: 1200px) {
 		font-size: 1.5rem;
 	}
 }
 
 [type="search"] {
 	outline-offset: -2px;
-	@extend textfield;
+	// @extend %textfield;
+}
+input,
+textarea {
+	font-size: 16px;
+	// text-align: center;
+	caret-color: $color-primary;
+	&::placeholder {
+		font-weight: $fw-regular;
+		text-transform: capitalize;
+		color: $color-primary;
+	}
 }
 
 ::-webkit-file-upload-button {
@@ -257,7 +275,7 @@ progress {
 	display: none !important;
 }
 
-.des {
-	font-size: 1.25rem;
-	font-weight: 300;
+// Set display: none on Line Breaks Used as Spacing
+br + br {
+	display: none;
 }

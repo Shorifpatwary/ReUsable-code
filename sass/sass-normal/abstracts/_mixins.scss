@@ -70,3 +70,17 @@ $breakpoints: (
 
 /* use example */
 // @include column-divide-without-breakpoints()
+
+// calculation type classes making .
+@mixin calculation-type-classes(
+	$className: "gap",
+	$totalClass: 10,
+	$property: "gap",
+	$property-value-unite: "rem"
+) {
+	@for $i from 1 through $totalClass {
+		.#{$className}__#{$i} {
+			#{$property}: 0.5 * $i#{$property-value-unite};
+		}
+	}
+}
