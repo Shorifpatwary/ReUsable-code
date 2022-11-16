@@ -42,7 +42,7 @@ h1 {
 }
 @media only screen and (min-width: 1200px) {
 	h1 {
-		font-size: 2.5rem;
+		font-size: calc(2rem + 2vw);
 	}
 }
 
@@ -51,7 +51,7 @@ h2 {
 }
 @media only screen and (min-width: 1200px) {
 	h2 {
-		font-size: 2rem;
+		font-size: calc(1.8rem + 2vw);
 	}
 }
 
@@ -60,7 +60,7 @@ h3 {
 }
 @media only screen and (min-width: 1200px) {
 	h3 {
-		font-size: 1.75rem;
+		font-size: calc(1.5rem + 2vw);
 	}
 }
 
@@ -69,7 +69,7 @@ h4 {
 }
 @media only screen and (min-width: 1200px) {
 	h4 {
-		font-size: 1.5rem;
+		font-size: calc(1.5rem + 1.8vw);
 	}
 }
 
@@ -128,6 +128,9 @@ a {
 
 	&:hover {
 		color: $link-hover-color;
+	}
+	&:focus {
+		outline: inherit;
 	}
 }
 
