@@ -247,19 +247,30 @@
 .grow {
 	flex-grow: 1 !important;
 }
-.grow-none {
+.no__grow {
 	flex-grow: 0 !important;
 }
 // flex shrink
 .shrink {
 	flex-shrink: 1 !important ;
 }
-.shrink__none {
+.no__shrink {
 	flex-shrink: 0 !important ;
 }
-// flex wrap
+// ======= FLEX WRAP
 .wrap {
 	flex-wrap: wrap !important;
+}
+// flex wrap with different breakpoints
+@media only screen and (max-width: $bp-3) {
+	.wrap__bp3 {
+		flex-wrap: wrap !important;
+	}
+}
+@media only screen and (max-width: $bp-4) {
+	.wrap__bp4 {
+		flex-wrap: wrap !important;
+	}
 }
 .no__wrap {
 	flex-wrap: nowrap !important;
